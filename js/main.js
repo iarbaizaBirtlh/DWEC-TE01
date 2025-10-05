@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 console.log("Fichero main.js cargado correctamente");
 
 // ----------------------------------------------- (! NO TOCAR ) ------------------------------------------------------
-let ultimoId = 18; // Último ID de tu lista inicial
+/* let ultimoId = 18; // Último ID de tu lista inicial
 let segundos = 5;
 
 setInterval(() => {
@@ -42,8 +42,9 @@ setInterval(() => {
 
     // mostramos el gasto
     console.log("Nuevo gasto generado:", gasto);
-    alert(`Nuevo gasto generado:\n${JSON.stringify(gasto, null, 2)}`);
+    alert(`Nuevo gasto generado:\n${JSON.stringify(gasto, null, 2)}`); */
 
 
     GastoService.procesarGasto(JSON.stringify(gasto));
 }, segundos * 1000);
+
