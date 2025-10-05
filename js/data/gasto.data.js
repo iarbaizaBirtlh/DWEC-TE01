@@ -21,13 +21,13 @@ const historico_db = [
     {"id":18,"vehicleType":"moto","date":"2020-12-04","kilometers":34,"precioViaje":2.04}
 ];
 
-export const GASTOS_DB = historico_db.map(g =>
+export const GASTOS_DB = historico_db.map(data =>
     new GastoCombustible(
-        g.id,
-        g.vehicleType,
-        new Date(g.date),
-        g.kilometers,
-        g.precioViaje
+        data.id,
+        data.vehicleType,
+        new Date(data.date),
+        data.kilometers,
+        data.precioViaje
     )
 );
 
